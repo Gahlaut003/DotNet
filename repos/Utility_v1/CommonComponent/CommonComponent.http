@@ -1,0 +1,6 @@
+@CommonComponent_HostAddress = http://localhost:5093
+
+GET {{CommonComponent_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,15 @@
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\bin\Debug\net8.0\DesignPattern&Solid.exe
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\bin\Debug\net8.0\DesignPattern&Solid.deps.json
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\bin\Debug\net8.0\DesignPattern&Solid.runtimeconfig.json
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\bin\Debug\net8.0\DesignPattern&Solid.dll
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\bin\Debug\net8.0\DesignPattern&Solid.pdb
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\obj\Debug\net8.0\DesignPattern&Solid.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\obj\Debug\net8.0\DesignPattern&Solid.AssemblyInfoInputs.cache
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\obj\Debug\net8.0\DesignPattern&Solid.AssemblyInfo.cs
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\obj\Debug\net8.0\DesignPattern&Solid.csproj.CoreCompileInputs.cache
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\obj\Debug\net8.0\DesignPattern&Solid.sourcelink.json
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\obj\Debug\net8.0\DesignPattern&Solid.dll
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\obj\Debug\net8.0\refint\DesignPattern&Solid.dll
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\obj\Debug\net8.0\DesignPattern&Solid.pdb
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\obj\Debug\net8.0\DesignPattern&Solid.genruntimeconfig.cache
+C:\Users\Abhishek\Documents\learning\C#\DesignPatterns&SOLID\DesignPattern&Solid\obj\Debug\net8.0\ref\DesignPattern&Solid.dll

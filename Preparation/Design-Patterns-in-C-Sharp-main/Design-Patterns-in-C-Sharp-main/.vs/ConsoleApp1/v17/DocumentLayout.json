@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\Preparation\\Design-Patterns-in-C-Sharp-main\\Design-Patterns-in-C-Sharp-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92CF5E55-C53C-4837-87A9-B37322E4052B}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\preparation\\design-patterns-in-c-sharp-main\\design-patterns-in-c-sharp-main\\consoleapp1\\src\\oopprinciples\\abstraction\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92CF5E55-C53C-4837-87A9-B37322E4052B}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\src\\oopprinciples\\abstraction\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92CF5E55-C53C-4837-87A9-B37322E4052B}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\preparation\\design-patterns-in-c-sharp-main\\design-patterns-in-c-sharp-main\\consoleapp1\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92CF5E55-C53C-4837-87A9-B37322E4052B}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\Preparation\\Design-Patterns-in-C-Sharp-main\\Design-Patterns-in-C-Sharp-main\\ConsoleApp1\\src\\OopPrinciples\\Abstraction\\EmailService.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\src\\OopPrinciples\\Abstraction\\EmailService.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\Preparation\\Design-Patterns-in-C-Sharp-main\\Design-Patterns-in-C-Sharp-main\\ConsoleApp1\\src\\OopPrinciples\\Abstraction\\EmailService.cs",
+              "RelativeToolTip": "ConsoleApp1\\src\\OopPrinciples\\Abstraction\\EmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA6wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T16:19:01.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\Preparation\\Design-Patterns-in-C-Sharp-main\\Design-Patterns-in-C-Sharp-main\\ConsoleApp1\\src\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\src\\Program.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\Preparation\\Design-Patterns-in-C-Sharp-main\\Design-Patterns-in-C-Sharp-main\\ConsoleApp1\\src\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\src\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T16:18:27.923Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

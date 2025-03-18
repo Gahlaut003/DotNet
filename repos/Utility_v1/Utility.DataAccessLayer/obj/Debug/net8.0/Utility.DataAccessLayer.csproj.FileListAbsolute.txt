@@ -1,0 +1,13 @@
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\bin\Debug\net8.0\Utility.DataAccessLayer.deps.json
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\bin\Debug\net8.0\Utility.DataAccessLayer.dll
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\bin\Debug\net8.0\Utility.DataAccessLayer.pdb
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\obj\Debug\net8.0\Utility.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\obj\Debug\net8.0\Utility.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\obj\Debug\net8.0\Utility.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\obj\Debug\net8.0\Utility.DataAccessLayer.AssemblyInfo.cs
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\obj\Debug\net8.0\Utility.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\obj\Debug\net8.0\Utility.DataAccessLayer.sourcelink.json
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\obj\Debug\net8.0\Utility.DataAccessLayer.dll
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\obj\Debug\net8.0\refint\Utility.DataAccessLayer.dll
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\obj\Debug\net8.0\Utility.DataAccessLayer.pdb
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\Utility.DataAccessLayer\obj\Debug\net8.0\ref\Utility.DataAccessLayer.dll

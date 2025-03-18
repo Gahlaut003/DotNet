@@ -1,0 +1,15 @@
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\bin\Debug\net8.0\main.cs.exe
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\bin\Debug\net8.0\main.cs.deps.json
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\bin\Debug\net8.0\main.cs.runtimeconfig.json
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\bin\Debug\net8.0\main.cs.dll
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\bin\Debug\net8.0\main.cs.pdb
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\obj\Debug\net8.0\main.cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\obj\Debug\net8.0\main.cs.AssemblyInfoInputs.cache
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\obj\Debug\net8.0\main.cs.AssemblyInfo.cs
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\obj\Debug\net8.0\main.cs.csproj.CoreCompileInputs.cache
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\obj\Debug\net8.0\main.cs.sourcelink.json
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\obj\Debug\net8.0\main.cs.dll
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\obj\Debug\net8.0\refint\main.cs.dll
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\obj\Debug\net8.0\main.cs.pdb
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\obj\Debug\net8.0\main.cs.genruntimeconfig.cache
+C:\Users\Abhishek\Documents\learning\C#\c#LEARNNING\dotnetVisualCodeUtility\Utilityv1\main.cs\obj\Debug\net8.0\ref\main.cs.dll

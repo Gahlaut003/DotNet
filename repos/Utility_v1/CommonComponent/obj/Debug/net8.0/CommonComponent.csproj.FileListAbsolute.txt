@@ -1,0 +1,8 @@
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\CommonComponent\obj\Debug\net8.0\CommonComponent.csproj.AssemblyReference.cache
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\CommonComponent\obj\Debug\net8.0\CommonComponent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\CommonComponent\obj\Debug\net8.0\CommonComponent.AssemblyInfoInputs.cache
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\CommonComponent\obj\Debug\net8.0\CommonComponent.AssemblyInfo.cs
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\CommonComponent\obj\Debug\net8.0\CommonComponent.csproj.CoreCompileInputs.cache
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\CommonComponent\obj\Debug\net8.0\CommonComponent.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\CommonComponent\obj\Debug\net8.0\CommonComponent.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Abhishek\Documents\learning\C#\repos\Utility_v1\CommonComponent\obj\Debug\net8.0\CommonComponent.sourcelink.json

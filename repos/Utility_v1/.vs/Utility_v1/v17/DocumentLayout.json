@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D35D6E99-62ED-4EE1-90E0-E9D5207D69AB}|CommonComponent\\CommonComponent.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_v1\\commoncomponent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D35D6E99-62ED-4EE1-90E0-E9D5207D69AB}|CommonComponent\\CommonComponent.csproj|solutionrelative:commoncomponent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948F3101-5D20-4EEB-9A62-EAD9E9642DA5}|Utilityv0.1\\Utilityv0.1.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_v1\\utilityv0.1\\controllers\\dbconnectiondemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948F3101-5D20-4EEB-9A62-EAD9E9642DA5}|Utilityv0.1\\Utilityv0.1.csproj|solutionrelative:utilityv0.1\\controllers\\dbconnectiondemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948F3101-5D20-4EEB-9A62-EAD9E9642DA5}|Utilityv0.1\\Utilityv0.1.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_v1\\utilityv0.1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948F3101-5D20-4EEB-9A62-EAD9E9642DA5}|Utilityv0.1\\Utilityv0.1.csproj|solutionrelative:utilityv0.1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67D1285A-19FA-4C28-A264-53E1BC860AB5}|CommonComponentBL\\CommonComponentBL.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_v1\\commoncomponentbl\\commoncomponentbl.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{67D1285A-19FA-4C28-A264-53E1BC860AB5}|CommonComponentBL\\CommonComponentBL.csproj|solutionrelative:commoncomponentbl\\commoncomponentbl.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D35D6E99-62ED-4EE1-90E0-E9D5207D69AB}|CommonComponent\\CommonComponent.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_v1\\commoncomponent\\controllers\\userauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D35D6E99-62ED-4EE1-90E0-E9D5207D69AB}|CommonComponent\\CommonComponent.csproj|solutionrelative:commoncomponent\\controllers\\userauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D35D6E99-62ED-4EE1-90E0-E9D5207D69AB}|CommonComponent\\CommonComponent.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_v1\\commoncomponent\\commoncomponent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D35D6E99-62ED-4EE1-90E0-E9D5207D69AB}|CommonComponent\\CommonComponent.csproj|solutionrelative:commoncomponent\\commoncomponent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D35D6E99-62ED-4EE1-90E0-E9D5207D69AB}|CommonComponent\\CommonComponent.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_v1\\commoncomponent\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D35D6E99-62ED-4EE1-90E0-E9D5207D69AB}|CommonComponent\\CommonComponent.csproj|solutionrelative:commoncomponent\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67D1285A-19FA-4C28-A264-53E1BC860AB5}|CommonComponentBL\\CommonComponentBL.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_v1\\commoncomponentbl\\services\\userauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67D1285A-19FA-4C28-A264-53E1BC860AB5}|CommonComponentBL\\CommonComponentBL.csproj|solutionrelative:commoncomponentbl\\services\\userauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 191,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\Utilityv0.1\\Program.cs",
+              "RelativeDocumentMoniker": "Utilityv0.1\\Program.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\Utilityv0.1\\Program.cs",
+              "RelativeToolTip": "Utilityv0.1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T19:28:53.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponent\\Program.cs",
+              "RelativeDocumentMoniker": "CommonComponent\\Program.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponent\\Program.cs",
+              "RelativeToolTip": "CommonComponent\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T06:33:08.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CommonComponentBL",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponentBL\\CommonComponentBL.csproj",
+              "RelativeDocumentMoniker": "CommonComponentBL\\CommonComponentBL.csproj",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponentBL\\CommonComponentBL.csproj",
+              "RelativeToolTip": "CommonComponentBL\\CommonComponentBL.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-15T19:27:56.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBConnectionDemo.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\Utilityv0.1\\Controllers\\DBConnectionDemo.cs",
+              "RelativeDocumentMoniker": "Utilityv0.1\\Controllers\\DBConnectionDemo.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\Utilityv0.1\\Controllers\\DBConnectionDemo.cs",
+              "RelativeToolTip": "Utilityv0.1\\Controllers\\DBConnectionDemo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T19:29:24.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CommonComponent.csproj",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponent\\CommonComponent.csproj",
+              "RelativeDocumentMoniker": "CommonComponent\\CommonComponent.csproj",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponent\\CommonComponent.csproj",
+              "RelativeToolTip": "CommonComponent\\CommonComponent.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-20T04:44:58.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponent\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "CommonComponent\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponent\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "CommonComponent\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T20:49:36.759Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 209,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserAuth.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponent\\Controllers\\UserAuth.cs",
+              "RelativeDocumentMoniker": "CommonComponent\\Controllers\\UserAuth.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponent\\Controllers\\UserAuth.cs",
+              "RelativeToolTip": "CommonComponent\\Controllers\\UserAuth.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T20:49:20.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponentBL\\Services\\UserAuthService.cs",
+              "RelativeDocumentMoniker": "CommonComponentBL\\Services\\UserAuthService.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_v1\\CommonComponentBL\\Services\\UserAuthService.cs",
+              "RelativeToolTip": "CommonComponentBL\\Services\\UserAuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T20:55:22.973Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

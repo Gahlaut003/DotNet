@@ -1,0 +1,6 @@
+c:\Users\Abhishek\Documents\learning\C#\MyWebApp\obj\Debug\net6.0\MyWebApp.csproj.AssemblyReference.cache
+c:\Users\Abhishek\Documents\learning\C#\MyWebApp\obj\Debug\net6.0\MyWebApp.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Abhishek\Documents\learning\C#\MyWebApp\obj\Debug\net6.0\MyWebApp.AssemblyInfoInputs.cache
+c:\Users\Abhishek\Documents\learning\C#\MyWebApp\obj\Debug\net6.0\MyWebApp.AssemblyInfo.cs
+c:\Users\Abhishek\Documents\learning\C#\MyWebApp\obj\Debug\net6.0\MyWebApp.csproj.CoreCompileInputs.cache
+c:\Users\Abhishek\Documents\learning\C#\MyWebApp\obj\Debug\net6.0\MyWebApp.MvcApplicationPartsAssemblyInfo.cache

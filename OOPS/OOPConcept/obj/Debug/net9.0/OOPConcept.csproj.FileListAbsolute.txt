@@ -1,0 +1,15 @@
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\bin\Debug\net9.0\OOPConcept.exe
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\bin\Debug\net9.0\OOPConcept.deps.json
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\bin\Debug\net9.0\OOPConcept.runtimeconfig.json
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\bin\Debug\net9.0\OOPConcept.dll
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\bin\Debug\net9.0\OOPConcept.pdb
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\obj\Debug\net9.0\OOPConcept.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\obj\Debug\net9.0\OOPConcept.AssemblyInfoInputs.cache
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\obj\Debug\net9.0\OOPConcept.AssemblyInfo.cs
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\obj\Debug\net9.0\OOPConcept.csproj.CoreCompileInputs.cache
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\obj\Debug\net9.0\OOPConcept.sourcelink.json
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\obj\Debug\net9.0\OOPConcept.dll
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\obj\Debug\net9.0\refint\OOPConcept.dll
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\obj\Debug\net9.0\OOPConcept.pdb
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\obj\Debug\net9.0\OOPConcept.genruntimeconfig.cache
+C:\Users\Abhishek\Documents\learning\C#\OOPS\OOPConcept\obj\Debug\net9.0\ref\OOPConcept.dll

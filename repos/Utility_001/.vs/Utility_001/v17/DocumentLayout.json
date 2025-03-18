@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_001\\utility_001\\controllers\\ipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|solutionrelative:utility_001\\controllers\\ipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_001\\utility_001\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|solutionrelative:utility_001\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_001\\utility_001\\repository\\sampleiprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|solutionrelative:utility_001\\repository\\sampleiprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_001\\utility_001\\services\\sampleipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|solutionrelative:utility_001\\services\\sampleipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_001\\utility_001\\services\\isampleipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|solutionrelative:utility_001\\services\\isampleipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_001\\utility_001\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|solutionrelative:utility_001\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_001\\utility_001\\libs\\dal\\adodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|solutionrelative:utility_001\\libs\\dal\\adodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_001\\utility_001\\spconstants\\spconsant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|solutionrelative:utility_001\\spconstants\\spconsant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_001\\utility_001\\repository\\isampleiprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|solutionrelative:utility_001\\repository\\isampleiprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_001\\utility_001\\models\\sampleipmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|solutionrelative:utility_001\\models\\sampleipmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|c:\\users\\abhishek\\documents\\learning\\c#\\repos\\utility_001\\utility_001\\libs\\dal\\idbcommandextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6D2D3-62CB-4CF5-95DA-1829B846A2A7}|Utility_001\\Utility_001.csproj|solutionrelative:utility_001\\libs\\dal\\idbcommandextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 201,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IPController.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Controllers\\IPController.cs",
+              "RelativeDocumentMoniker": "Utility_001\\Controllers\\IPController.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Controllers\\IPController.cs",
+              "RelativeToolTip": "Utility_001\\Controllers\\IPController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T06:43:27.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ISampleIPService.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Services\\ISampleIPService.cs",
+              "RelativeDocumentMoniker": "Utility_001\\Services\\ISampleIPService.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Services\\ISampleIPService.cs",
+              "RelativeToolTip": "Utility_001\\Services\\ISampleIPService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T06:02:04.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SampleIPService.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Services\\SampleIPService.cs",
+              "RelativeDocumentMoniker": "Utility_001\\Services\\SampleIPService.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Services\\SampleIPService.cs",
+              "RelativeToolTip": "Utility_001\\Services\\SampleIPService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T06:43:27.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SampleIPRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Repository\\SampleIPRepository.cs",
+              "RelativeDocumentMoniker": "Utility_001\\Repository\\SampleIPRepository.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Repository\\SampleIPRepository.cs",
+              "RelativeToolTip": "Utility_001\\Repository\\SampleIPRepository.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAD4vy8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T06:03:30.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Program.cs",
+              "RelativeDocumentMoniker": "Utility_001\\Program.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Program.cs",
+              "RelativeToolTip": "Utility_001\\Program.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAWwJAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T06:42:31.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Utility_001\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Utility_001\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAUwDEAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T04:42:29.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IDbCommandExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Libs\\DAL\\IDbCommandExtensions.cs",
+              "RelativeDocumentMoniker": "Utility_001\\Libs\\DAL\\IDbCommandExtensions.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Libs\\DAL\\IDbCommandExtensions.cs",
+              "RelativeToolTip": "Utility_001\\Libs\\DAL\\IDbCommandExtensions.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAgwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T07:16:43.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SPConsant.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\SpConstants\\SPConsant.cs",
+              "RelativeDocumentMoniker": "Utility_001\\SpConstants\\SPConsant.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\SpConstants\\SPConsant.cs",
+              "RelativeToolTip": "Utility_001\\SpConstants\\SPConsant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T07:06:28.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ISampleIPRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Repository\\ISampleIPRepository.cs",
+              "RelativeDocumentMoniker": "Utility_001\\Repository\\ISampleIPRepository.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Repository\\ISampleIPRepository.cs",
+              "RelativeToolTip": "Utility_001\\Repository\\ISampleIPRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T07:01:16.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdoDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Libs\\DAL\\AdoDBContext.cs",
+              "RelativeDocumentMoniker": "Utility_001\\Libs\\DAL\\AdoDBContext.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Libs\\DAL\\AdoDBContext.cs",
+              "RelativeToolTip": "Utility_001\\Libs\\DAL\\AdoDBContext.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAjwJIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T06:03:30.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SampleIPModel.cs",
+              "DocumentMoniker": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Models\\SampleIPModel.cs",
+              "RelativeDocumentMoniker": "Utility_001\\Models\\SampleIPModel.cs",
+              "ToolTip": "C:\\Users\\Abhishek\\Documents\\learning\\C#\\repos\\Utility_001\\Utility_001\\Models\\SampleIPModel.cs",
+              "RelativeToolTip": "Utility_001\\Models\\SampleIPModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T07:04:58.362Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
