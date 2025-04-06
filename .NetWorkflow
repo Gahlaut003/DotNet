@@ -1,0 +1,237 @@
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                            1️⃣ 📦 Development & Build Phase                  │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 1. Developer writes C# code                                                  │
+│    ├─ 🔰 Initiated by: Developer in IDE (e.g., Visual Studio, Rider)         │
+│    └─ Authored in .cs files using .NET SDK                                   │
+│    ├─ 🔶 CTS enforced                                                        │
+│    │    → Ensures type safety across all .NET languages                      │
+│    └─ 📜 CLS ensured                                                         │
+│         → Enables cross-language compatibility of public APIs               │
+│                                                                              │
+│ 2. MSBuild starts the build process                                          │
+│    ├─ 🔰 Triggered by: Build command (CLI or IDE)                            │
+│    └─ Parses .csproj files, resolves dependencies                            │
+│    └─ Builds targets and project configurations                              │
+│                                                                              │
+│ 3. Roslyn compiles C# to Intermediate Language (IL)                          │
+│    ├─ 🔰 Triggered by: MSBuild invoking C# compiler                          │
+│    ├─ ✅ Syntax & type checks performed                                      │
+│    ├─ 📦 Type Checker enforces language-level type rules (CLR)              │
+│    └─ IL + metadata emitted                                                  │
+│                                                                              │
+│ 4. IL + metadata saved in PE files (DLLs/EXEs)                               │
+│    ├─ 🔰 Triggered by: Roslyn compiler output                                │
+│    └─ Portable Executable format stores assemblies                           │
+│    └─ Metadata includes types, tokens, methods, etc.                         │
+│                                                                              │
+│ 5. NuGet packages resolved                                                   │
+│    ├─ 🔰 Triggered by: MSBuild dependency resolution                         │
+│    ├─ External dependencies restored                                         │
+│    ├─ Dependency graph built                                                 │
+│    └─ .deps.json & runtimeconfig.json generated                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                         2️⃣ ⚙️ Application Hosting Layer                     │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 6. App launched via dotnet CLI or executable                                 │
+│    ├─ 🔰 Initiated by: User runs dotnet CLI / application EXE                │
+│    ├─ HostFXR loads runtime version                                          │
+│    └─ HostPolicy locates and configures runtime                              │
+│                                                                              │
+│ 7. CoreCLR runtime loaded                                                    │
+│    ├─ 🔰 Triggered by: HostFXR/HostPolicy                                    │
+│    ├─ 🧠 CLR initializes components:                                          │
+│    │   ├─ 📚 Base Class Library support (System.*, etc.)                     │
+│    │   ├─ 🧵 Thread support (ThreadPool, Tasks, async)                       │
+│    │   ├─ 🔌 COM Marshaler (Interop services)                                │
+│    │   ├─ 🔒 Security Engine (CAS, Permissions)                              │
+│    │   ├─ 🐞 Debug Engine (Symbols, breakpoints)                             │
+│    │   ├─ ⚙️ Code Manager (JIT method mgmt & stubs)                          │
+│    │   ├─ 🔄 IL Compilers (JIT, Tiered Compilation)                          │
+│    │   ├─ 🧹 Garbage Collector (Gen0/1/2, LOH)                                │
+│    │   └─ 📦 Class Loader (AssemblyLoadContext, Reflection)                 │
+│    ├─ AssemblyLoadContext created                                            │
+│    └─ P/Invoke loads native libraries (OpenSSL/SChannel)                     │
+│                                                                              │
+│ 8. Program.cs runs                                                           │
+│    ├─ 🔰 Triggered by: CoreCLR entry point execution                         │
+│    ├─ Entry point initializes host                                           │
+│    └─ CreateHostBuilder() sets up DI container                               │
+│                                                                              │
+│ 9. Startup.cs runs                                                           │
+│    ├─ 🔰 Triggered by: WebHost/GenericHost initialization                    │
+│    ├─ ConfigureServices() builds DI container                                │
+│    ├─ 🔶 CTS ensures typed registrations                                     │
+│    │    → Guarantees strict type checking in DI services                     │
+│    ├─ 📜 CLS ensures interoperable contracts                                 │
+│    │    → Allows public service APIs to work across .NET languages           │
+│    └─ Configure() registers middleware                                       │
+│                                                                              │
+│10. Middleware pipeline built                                                 │
+│    ├─ 🔰 Triggered by: Startup.Configure execution                           │
+│    └─ Delegates compiled via JIT                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                 3️⃣ 🌐 HTTP Request Lifecycle (ASP.NET Core)                 │
+├──────────────────────────────────────────────────────────────────────────────┤
+│11. Kestrel starts HTTP listener                                              │
+│    ├─ 🔰 Triggered by: Host.RunAsync()                                       │
+│    ├─ Binds to TCP port (IOCP/epoll/kqueue)                                  │
+│    └─ TLS handshake (OpenSSL/SChannel)                                       │
+│                                                                              │
+│12. Incoming request hits TCP socket                                          │
+│    ├─ 🔰 Triggered by: External HTTP client request                          │
+│    └─ OS handles with IOCP/epoll/kqueue                                      │
+│                                                                              │
+│13. ThreadPool schedules work item                                            │
+│    ├─ 🔰 Triggered by: OS socket signal via Kestrel                          │
+│    ├─ CLR Thread support activates thread queue                              │
+│    └─ Work-stealing and CPU-aware scheduling                                 │
+│                                                                              │
+│14. Kestrel parses HTTP headers/body                                          │
+│    ├─ 🔰 Triggered by: Request buffer ready for parsing                      │
+│    ├─ Efficient parsing using Span<T>, Utf8Parser                            │
+│    └─ Uses System.IO.Pipelines                                               │
+│                                                                              │
+│15. Request passed to ASP.NET Core runtime                                    │
+│    ├─ 🔰 Triggered by: Kestrel forwarding HTTP context                       │
+│    └─ Control transferred to middleware pipeline                             │
+│                                                                              │
+│16. Middleware pipeline begins                                                │
+│    ├─ 🔰 Triggered by: ASP.NET Core runtime                                  │
+│    ├─ Logging, Exception Handling, Auth, etc.                                │
+│    └─ CLR Exception Manager monitors all errors                              │
+│                                                                              │
+│17. Routing Middleware identifies endpoint                                    │
+│    ├─ 🔰 Triggered by: Middleware pipeline                                   │
+│    └─ Maps request to appropriate controller/action                          │
+│                                                                              │
+│18. Endpoint attributes validated ([HttpGet], etc.)                           │
+│    ├─ 🔰 Triggered by: Routing result                                        │
+│    └─ Ensures correct routing annotations                                    │
+│                                                                              │
+│19. Filters executed (Auth, Resource, Action, Exception)                      │
+│    ├─ 🔰 Triggered by: Endpoint invocation                                   │
+│    └─ CLR Exception Manager + Debug Engine intercepts faults                 │
+│                                                                              │
+│20. Model Binding & Validation                                                │
+│    ├─ 🔰 Triggered by: Controller parameter resolution                       │
+│    ├─ Binds request to parameters using Expression Trees                     │
+│    ├─ 🔶 CTS: Type-checked binding                                           │
+│    │    → Validates model data types during binding                          │
+│    └─ ✅ Input validation enforced                                           │
+│                                                                              │
+│21. DI injects Controller + Dependencies                                      │
+│    ├─ 🔰 Triggered by: ASP.NET Core ActivatorUtilities                       │
+│    ├─ Constructor injection with services                                    │
+│    ├─ 🔶 CTS compliance ensured                                              │
+│    │    → Ensures type-safe object injection                                 │
+│    └─ 📜 CLS compliance ensured                                              │
+│         → Services are compatible across .NET languages                      │
+│                                                                              │
+│22. Controller method is invoked                                              │
+│    ├─ 🔰 Triggered by: MVC/Routing invoking matched action                   │
+│    ├─ 🟢 CLR: JIT (IL Compilers) compiles method to native                   │
+│    └─ CLR handles GC, exceptions, async support                              │
+│                                                                              │
+│22.1 🧮 Code executed by CLR                                                  │
+│    ├─ 🔰 Triggered by: JIT-compiled native method execution                  │
+│    ├─ Executed on physical CPU by CLR via native instructions               │
+│    └─ CLR handles stack frames, exceptions, garbage collection               │
+│                                                                              │
+│23. Controller → Service → Repository                                         │
+│    ├─ 🔰 Triggered by: Application logic                                     │
+│    ├─ Async/await or ValueTask<T> flows                                      │
+│    └─ CLR coordinates continuation tasks                                     │
+│                                                                              │
+│23.1 🧮 Application logic executed by CLR                                     │
+│    ├─ 🔰 Triggered by: Service/Repository IL compiled by JIT                │
+│    └─ CPU executes logic via CLR runtime                                    │
+│                                                                              │
+│24. Data returned up to Controller                                            │
+│    ├─ 🔰 Triggered by: Awaited async calls completing                        │
+│    └─ Propagated up the call stack                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│             4️⃣ 🎨 Optional: View Rendering (MVC / Razor)                    │
+├──────────────────────────────────────────────────────────────────────────────┤
+│25. Razor View selected (e.g., Index.cshtml)                                  │
+│    ├─ 🔰 Triggered by: Controller returns a ViewResult                       │
+│    ├─ View compiled: C# → IL → JIT’d native (on first access)                │
+│    ├─ 🔶 CTS enforced in view code                                           │
+│    │    → Ensures type-safe Razor components                                 │
+│    ├─ 📜 CLS enforced in view code                                           │
+│    │    → Ensures views are language-agnostic                                │
+│    └─ HTML encoding applied (XSS protection)                                 │
+│                                                                              │
+│26. View generates HTML string                                                │
+│    ├─ 🔰 Triggered by: Razor engine rendering                                │
+│    └─ Returned as part of controller action result                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                 5️⃣ 📤 Response Handling & Post-Processing                   │
+├──────────────────────────────────────────────────────────────────────────────┤
+│27. Action Result returned (View, JSON, File, etc.)                           │
+│    ├─ 🔰 Triggered by: Controller completes execution                        │
+│    └─ Final output passed to response pipeline                               │
+│                                                                              │
+│28. Result Filters (post-processing logic) run                                │
+│    ├─ 🔰 Triggered by: ASP.NET Core action result pipeline                   │
+│    └─ Final transformations (e.g., formatting)                               │
+│                                                                              │
+│29. Middleware post-processing                                                │
+│    ├─ 🔰 Triggered by: Response moving back up middleware                    │
+│    ├─ Logging, Compression, Exception wrapping                               │
+│    └─ CLR ensures error handling completed                                   │
+│                                                                              │
+│30. Response serialized (e.g., JSON via Utf8JsonWriter)                       │
+│    ├─ 🔰 Triggered by: Formatter middleware / endpoint logic                 │
+│    └─ Headers, content length, content-type set                              │
+│                                                                              │
+│31. Written to HTTP stream                                                    │
+│    ├─ 🔰 Triggered by: ASP.NET Core response writer                          │
+│    └─ Copied to SocketAsyncEventArgs buffer                                  │
+│                                                                              │
+│32. Kestrel sends HTTP response                                               │
+│    ├─ 🔰 Triggered by: Stream write completed                                │
+│    └─ TCP packets transmitted via OS stack                                   │
+│                                                                              │
+│33. TCP response reaches client                                               │
+│    └─ 🔰 Triggered by: Network layer delivery                                │
+│    └─ Client receives final HTTP response                                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                    6️⃣ 🧠 Deep CLR / OS-Level Operations                     │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ CLR Responsibilities:                                                        │
+│ ├─ 🔰 Triggered by: App execution and runtime needs                         │
+│ ├─ 📚 Base Class Library support                                             │
+│ ├─ 🧵 Thread support (ThreadPool, Tasks, async)                              │
+│ ├─ 🔌 COM Marshaler for interop                                              │
+│ ├─ 🛡️ Security Engine (CAS, role-based access)                             │
+│ ├─ 🐞 Debug Engine (debug symbols, exception diagnostics)                    │
+│ ├─ ⚙️ Code Manager (JIT mapping, method body mgmt)                          │
+│ ├─ 🔄 IL Compilers (JIT/Tiered Compilation)                                  │
+│ ├─ 🧹 Garbage Collector (Generational GC, LOH)                               │
+│ └─ 📦 Class Loader (AssemblyLoadContext, Reflection)                        │
+│                                                                              │
+│ 🔶 CTS (Common Type System):                                                 │
+│ ├─ Ensures runtime type safety                                               │
+│ └─ All values validated by type contract                                     │
+│                                                                              │
+│ 📜 CLS (Common Language Specification):                                      │
+│ ├─ Guarantees cross-language API exposure                                    │
+│ └─ Public APIs usable across .NET languages                                  │
+│                                                                              │
+│ OS Responsibilities:                                                         │
+│ ├─ 🔰 Triggered by: Hardware + app/kernel interactions                       │
+│ ├─ Thread Scheduling, File I/O, Paging, DNS                                  │
+│ ├─ I/O Completion Ports / epoll / kqueue                                     │
+│ └─ TLS Termination (OpenSSL, SChannel, Apple TLS)                            │
+└──────────────────────────────────────────────────────────────────────────────┘
