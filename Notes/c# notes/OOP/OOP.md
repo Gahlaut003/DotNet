@@ -59,15 +59,7 @@ In C#, a **class** is defined as a data structure that encapsulates data and beh
      }
      ```
 
-### Access Modifiers
-Access modifiers define the visibility of the class and its members:
-- `public`: Accessible from anywhere.
-- `private`: Accessible only within the class.
-- `protected`: Accessible within the class and derived classes.
-- `internal`: Accessible within the same assembly.
-- `protected internal`: Accessible within the same assembly or derived classes.
-
-### Example of a Class
+ ### Example of a Class
 ```csharp
 public class Person {
     // Fields
@@ -96,7 +88,78 @@ public class Person {
         Console.WriteLine($"Hi, I'm {name} and I'm {age} years old.");
     }
 }
-```
+```    
+
+### Access Modifiers
+Access modifiers define the visibility of the class and its members:
+- `public`: Accessible from anywhere.
+  *   **Accessibility**: Accessible from anywhere, without any restrictions.
+  *   **Usage**: Use `public` when you want a class or member to be accessible from any part of your code, including other assemblies (projects).
+  *   **Example**:
+        ```csharp
+        public class MyClass
+        {
+            public int PublicField; // Accessible from anywhere
+            public void PublicMethod() { } // Accessible from anywhere
+        }
+        ```
+- `private`: Accessible only within the class.
+  *   **Accessibility**: Accessible only within the class in which it is declared.
+  *   **Usage**: Use `private` to encapsulate data and hide implementation details from outside the class. This is a key part of encapsulation.
+  *   **Example**:
+        ```csharp
+        public class MyClass
+        {
+            private int privateField; // Accessible only within MyClass
+            private void PrivateMethod() { } // Accessible only within MyClass
+        }
+        ```
+- `protected`: Accessible within the class and derived classes.
+  *   **Accessibility**: Accessible within the class in which it is declared and by derived classes (subclasses), even if they are in different assemblies.
+  *   **Usage**: Use `protected` when you want members to be accessible to subclasses but not to arbitrary code outside the class hierarchy.
+  *   **Example**:
+        ```csharp
+        public class MyClass
+        {
+            protected int ProtectedField; // Accessible within MyClass and derived classes
+            protected void ProtectedMethod() { } // Accessible within MyClass and derived classes
+        }
+
+        public class DerivedClass : MyClass
+        {
+            public void AccessProtected()
+            {
+                ProtectedField = 10; // OK: Accessible in derived class
+                ProtectedMethod(); // OK: Accessible in derived class
+            }
+        }
+        ```
+- `internal`: Accessible within the same assembly.
+  *   **Accessibility**: Accessible only within the same assembly (project).
+  *   **Usage**: Use `internal` when you want a class or member to be accessible throughout your project but not from other projects.
+  *   **Example**:
+        ```csharp
+        internal class MyClass // Accessible only within the same assembly
+        {
+            internal int InternalField; // Accessible only within the same assembly
+            internal void InternalMethod() { } // Accessible only within the same assembly
+        }
+        ```
+- `protected internal`: Accessible within the same assembly or derived classes.
+  *   **Accessibility**: Accessible within the same assembly and by derived classes in other assemblies. It's the union of `protected` and `internal`.
+  *   **Usage**: Use `protected internal` when you want a member to be accessible to derived classes, regardless of which assembly they are in, and to any code within the same assembly.
+  *   **Example**:
+        ```csharp
+        public class MyClass
+        {
+            protected internal int ProtectedInternalField; // Accessible within the same assembly or derived classes
+            protected internal void ProtectedInternalMethod() { } // Accessible within the same assembly or derived classes
+        }
+        ```
+<!-- filepath: c:\Users\Abhishek\Documents\learning\C#\Notes\c# notes\OOP\OOP.md -->
+
+
+
 
 ## Types of Classes in C#.Net
 1. **Abstract Class**: 
