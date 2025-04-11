@@ -151,6 +151,51 @@
 │         → Why it does:                                                       │
 │           1. To modularize and centralize common application logic.          │
 │           2. To enable flexible and extensible request/response processing.  │
+│         → Middleware Execution Order Example:                                │
+│           ┌─────────────────────────────────────────────────┐                │
+│           │           REQUEST PIPELINE FLOW                  │                │
+│           │                    ↓                            │                │
+│           │ 1. ExceptionHandler (Catches all exceptions)    │                │
+│           │                    ↓                            │                │
+│           │ 2. HttpsRedirection (HTTP → HTTPS)              │                │
+│           │                    ↓                            │                │
+│           │ 3. StaticFiles (Serves static content)         │                │
+│           │                    ↓                            │                │
+│           │ 4. Routing (Determines endpoint)               │                │
+│           │                    ↓                            │                │
+│           │ 5. Authentication (Identifies user)            │                │
+│           │                    ↓                            │                │
+│           │ 6. Authorization (Checks permissions)          │                │
+│           │                    ↓                            │                │
+│           │ 7. Endpoints (Executes controller/page)        │                │
+│           │                    ↓                            │                │
+│           │              RESPONSE FLOW                      │                │
+│           │                    ↑                            │                │
+│           │ 7. Endpoints (Post-processing)                 │                │
+│           │                    ↑                            │                │
+│           │ 6. Authorization (Post-processing)             │                │
+│           │                    ↑                            │                │
+│           │ 5. Authentication (Post-processing)            │                │
+│           │                    ↑                            │                │
+│           │ 4. Routing (Post-processing)                  │                │
+│           │                    ↑                            │                │
+│           │ 3. StaticFiles (Post-processing)              │                │
+│           │                    ↑                            │                │
+│           │ 2. HttpsRedirection (Post-processing)         │                │
+│           │                    ↑                            │                │
+│           │ 1. ExceptionHandler (Final error handling)    │                │
+│           └─────────────────────────────────────────────────┘                │
+│                                                                              │
+│         → Important Notes:                                                   │
+│           1. Order matters: Middleware executes in registration order        │
+│           2. Bidirectional flow: Request ↓ then Response ↑                   │
+│           3. Each middleware can:                                            │
+│              • Process the request before next middleware                    │
+│              • Process the response after next middleware                    │
+│              • Short-circuit the pipeline at any point                       │
+│           4. ExceptionHandler should be first to catch all errors            │
+│           5. Authentication before Authorization always                      │
+│           6. Endpoints middleware should be last                             │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -235,9 +280,7 @@
 │    │          2. Response returns ← Auth ← Routing ← Custom ← Endpoint       │
 │    │          3. Each middleware can:                                        │
 │    │             • Modify request/response                                   │
-│    │             • Short-circuit the chain   
-                        1. Any middleware can stop the pipeline execution      │
-│    │                  2. Can return response without reaching endpoint       │
+│    │             • Short-circuit the chain                                   │
 │    │             • Add services/features                                     │
 │    │       → Code Example:                                                   │
 │    │             csharp                                                     │
