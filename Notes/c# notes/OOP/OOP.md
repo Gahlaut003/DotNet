@@ -232,7 +232,193 @@ The principles of Object-Oriented Programming (OOP) are the foundation of design
      public interface IAnimal {
          void MakeSound(); // Interface method
      }
+```csharp
+// Generic Class
+public class GenericList<T> where T : class
+{
+    private List<T> items = new List<T>();
 
+    public void Add(T item)
+    {
+        if (item != null)
+        {
+            items.Add(item);
+        }
+        else
+        {
+            throw new ArgumentNullException(nameof(item), "Item cannot be null.");
+        }
+    }
+
+    public T Get(int index)
+    {
+        if (index >= 0 && index < items.Count)
+        {
+            return items[index];
+        }
+        else
+        {
+            throw new IndexOutOfRangeException("Index is out of range.");
+        }
+    }
+}
+
+// Usage
+GenericList<int> intList = new GenericList<int>();
+intList.Add(10);
+Console.WriteLine(intList.Get(0)); // Output: 10
+
+// Delegate Declaration
+public delegate void Notify(string message);
+
+// Class with a Method Matching the Delegate Signature
+public class Notifier
+{
+    public void SendNotification(string message)
+    {
+        Console.WriteLine($"Notification: {message}");
+    }
+}
+
+// Usage
+Notifier notifier = new Notifier();
+Notify notifyDelegate = new Notify(notifier.SendNotification);
+notifyDelegate("Hello, Delegates!"); // Output: Notification: Hello, Delegates!
+
+// Improved Code
+public class BankAccount
+{
+    private decimal balance;
+
+    public decimal Balance
+    {
+        get { return balance; }
+        private set
+        {
+            if (value >= 0)
+            {
+                balance = value;
+            }
+            else
+            {
+                throw new ArgumentException("Balance cannot be negative.");
+            }
+        }
+    }
+
+    public void Deposit(decimal amount)
+    {
+        if (amount > 0)
+        {
+            Balance += amount;
+        }
+        else
+        {
+            throw new ArgumentException("Deposit amount must be positive.");
+        }
+    }
+}
+
+// Improved Code
+public abstract class Shape
+{
+    public abstract void Draw();
+
+    public void Display()
+    {
+        Console.WriteLine("Displaying shape");
+    }
+}
+
+public class Circle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Drawing a circle");
+    }
+}
+
+// Improved Code
+public class Animal
+{
+    public virtual void Speak()
+    {
+        Console.WriteLine("Animal speaks");
+    }
+}
+
+public class Dog : Animal
+{
+    public override void Speak()
+    {
+        Console.WriteLine("Dog barks");
+    }
+}
+
+// Improved Code
+public class Calculator
+{
+    public int Add(int a, int b)
+    {
+        return a + b;
+    }
+
+    public double Add(double a, double b)
+    {
+        return a + b;
+    }
+}
+
+// Improved Code
+public class Person
+{
+    private string name;
+    private int age;
+
+    public string Name
+    {
+        get { return name; }
+        set
+        {
+            if (!string.IsNullOrEmpty(value))
+            {
+                name = value;
+            }
+            else
+            {
+                throw new ArgumentException("Name cannot be null or empty.");
+            }
+        }
+    }
+
+    public int Age
+    {
+        get { return age; }
+        set
+        {
+            if (value >= 0)
+            {
+                age = value;
+            }
+            else
+            {
+                throw new ArgumentException("Age cannot be negative.");
+            }
+        }
+    }
+
+    public Person(string name, int age)
+    {
+        Name = name;
+        Age = age;
+    }
+
+    public void Introduce()
+    {
+        Console.WriteLine($"Hi, I'm {Name} and I'm {Age} years old.");
+    }
+}
+```
      public class Dog : IAnimal {
          public void MakeSound() {
              Console.WriteLine("Bark");

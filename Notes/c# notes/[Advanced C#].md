@@ -82,31 +82,3 @@
 │ // Logging message...                                                       │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Events
-Generics
-Reflection, Attributes and Metadata
-Dynamic Binding
-Disposal and Garbage Collection
-Serialization
-Application Domains
-Lambda
-Threading
-Asynchronous Programming
-Parallel Programming
-Concurrency & Asynchrony
-Native and COM Interoperability
-Security
-Networking
-Streams and I/O
-Diagnostics and Code Contracts
-Performance Counter
-
-
-```mermaid
-flowchart TD
-    A[Define Delegate Type] --> B[Create Delegate Instance]
-    B --> C1[Store Method (Single)]
-    B --> C2[Add Method (+=)]
-    C1 --> D[Invoke() Executes Targets]
-    C2 --> D
-    D --> E[Method(s) Get Executed]
