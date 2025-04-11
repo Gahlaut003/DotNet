@@ -362,3 +362,344 @@ RESPONSE ───┘
    app.UseAuthentication();  // ✅ Correct order
    app.UseAuthorization();
    ```
+
+### Deep Dive: Request/Response Pipeline Workflow 🔄
+
+#### 1️⃣ Request Journey (Inbound) ⬇️
+
+1. **Exception Handler**
+   - PRIMARY: Creates error handling boundary
+   - ACTIONS: 
+     - Sets up exception catching context
+     - Prepares error logging infrastructure
+     - Initializes error handling middleware
+   - EXAMPLE:
+     ```csharp
+     if (env.IsDevelopment())
+         app.UseDeveloperExceptionPage();
+     else
+         app.UseExceptionHandler("/Error");
+     ```
+
+2. **HTTPS Redirection**
+   - PRIMARY: Ensures secure communication
+   - ACTIONS:
+     - Checks request protocol
+     - Forces HTTPS if HTTP detected
+     - Handles SSL/TLS negotiation
+   - EXAMPLE:
+     ```csharp
+     if (context.Request.Scheme != "https")
+         RedirectToHttps(context);
+     ```
+
+3. **Static Files**
+   - PRIMARY: Serves files from wwwroot
+   - ACTIONS:
+     - Checks file existence
+     - Validates file permissions
+     - Handles file streaming
+   - OPTIMIZATION:
+     - Bypasses rest of pipeline for static content
+     - Implements caching strategies
+
+4. **Routing**
+   - PRIMARY: URL pattern matching
+   - ACTIONS:
+     - Parses URL segments
+     - Extracts route values
+     - Matches to endpoint patterns
+   - DATA FLOW:
+     ```
+     /api/users/123 ─┐
+                     └─► {controller: "users", id: "123"}
+     ```
+
+5. **Authentication**
+   - PRIMARY: User identification
+   - ACTIONS:
+     - Reads auth headers/cookies
+     - Validates tokens/credentials
+     - Creates ClaimsIdentity
+   - TOKENS:
+     - JWT validation
+     - Cookie decryption
+     - Token expiration check
+
+6. **Authorization**
+   - PRIMARY: Permission verification
+   - ACTIONS:
+     - Checks user roles
+     - Validates claims
+     - Enforces policies
+   - POLICIES:
+     ```csharp
+     [Authorize(Policy = "AdminOnly")]
+     [RequiresClaim("Department", "IT")]
+     ```
+
+7. **Endpoint**
+   - PRIMARY: Business logic execution
+   - ACTIONS:
+     - Controller instantiation
+     - Action method invocation
+     - Result generation
+
+#### 2️⃣ Response Journey (Outbound) ⬆️
+
+7. **Endpoint**
+   - PRIMARY: Response creation
+   - ACTIONS:
+     - Formats data (JSON/XML)
+     - Sets content type
+     - Prepares view rendering
+
+6. **Authorization**
+   - PRIMARY: Security headers
+   - ACTIONS:
+     - Adds CORS headers
+     - Sets security policies
+     - Includes auth challenges
+
+5. **Authentication**
+   - PRIMARY: Auth token management
+   - ACTIONS:
+     - Sets new auth cookies
+     - Refreshes tokens
+     - Updates auth headers
+
+4. **Routing**
+   - PRIMARY: URL finalization
+   - ACTIONS:
+     - Applies URL rewrites
+     - Finalizes redirects
+     - Sets location headers
+
+3. **Static Files**
+   - PRIMARY: Response optimization
+   - ACTIONS:
+     - Adds cache headers
+     - Applies compression
+     - Sets content length
+
+2. **HTTPS**
+   - PRIMARY: Security headers
+   - ACTIONS:
+     - Adds HSTS headers
+     - Sets secure cookies
+     - Ensures TLS headers
+
+1. **Exception Handler**
+   - PRIMARY: Error formatting
+   - ACTIONS:
+     - Formats error responses
+     - Logs exceptions
+     - Sanitizes error details
+
+#### Key Processing Points 🎯
+
+1. **Data Flow Pattern**
+   ```
+   Request:  Context modification flows down  ⬇️
+   Response: Context modification flows up    ⬆️
+   ```
+
+2. **State Changes**
+   ```
+   Each middleware:
+   ⬇️ Can modify request before passing down
+   ⬆️ Can modify response before passing up
+   ```
+
+3. **Performance Considerations**
+   - Early short-circuit opportunities
+   - Cached responses at any stage
+   - Parallel processing where possible
+
+## Low-Level Middleware Flow Details 🔬
+
+### Request Pipeline (Byte-by-Byte Flow) ⬇️
+
+```
+Client Request → TCP Socket → Kestrel → Middleware Chain
+
+1. Raw TCP Socket Data
+   ┌──────────────────────────────┐
+   │ GET /api/users HTTP/1.1      │ ─┐
+   │ Host: example.com            │  │
+   │ Authorization: Bearer xyz... │  │ Raw HTTP Request
+   │ Content-Type: application/json│  │
+   │ ...                          │ ─┘
+   └──────────────────────────────┘
+
+2. Kestrel Processing
+   ┌─────────────────────┐
+   │ Socket Buffer Read  │──→ System.IO.Pipelines
+   │ HTTP Parser        │──→ HttpContext Creation
+   │ TLS Termination   │──→ Decrypted Stream
+   └─────────────────────┘
+
+3. Middleware Chain Processing (Detailed)
+   
+   a. Exception Handler
+      INPUT: Raw HttpContext
+      │  - Request Stream
+      │  - Headers Dictionary
+      │  - Connection Info
+      OUTPUT: Exception Boundary
+      │  - try-catch wrapper
+      │  - error context
+
+   b. HTTPS Redirection
+      INPUT: HTTP Request
+      │  - Scheme (http/https)
+      │  - Host Header
+      │  - Original URL
+      OUTPUT: 
+      │  - 307 Redirect OR
+      │  - Passed Request
+
+   c. Static Files
+      INPUT: URL Path
+      │  - Physical Path Check
+      │  - File Metadata
+      OUTPUT:
+      │  - File Stream OR
+      │  - Pass Through
+
+   d. Routing
+      INPUT: URL Path + HTTP Method
+      │  - Route Templates
+      │  - Constraints
+      OUTPUT:
+      │  - Endpoint Selection
+      │  - Route Values
+
+   e. Authentication
+      INPUT: Auth Headers/Cookies
+      │  - Token Extraction
+      │  - Scheme Selection
+      OUTPUT:
+      │  - ClaimsIdentity
+      │  - AuthenticationTicket
+
+   f. Authorization
+      INPUT: ClaimsIdentity
+      │  - User Claims
+      │  - Role Claims
+      OUTPUT:
+      │  - Authorization Result
+      │  - Policy Evaluation
+
+   g. Endpoint
+      INPUT: Matched Route Data
+      │  - Controller Selection
+      │  - Action Parameters
+      OUTPUT:
+      │  - Action Result
+      │  - Response Data
+```
+
+### Response Pipeline (Byte-by-Byte Flow) ⬆️
+
+```
+Endpoint Result → Middleware Chain → Kestrel → TCP Socket
+
+1. Response Generation
+   ┌─────────────────────┐
+   │ Action Result       │──→ IActionResult
+   │ Response Headers    │──→ Dictionary<string,string>
+   │ Response Body      │──→ Stream/byte[]
+   └─────────────────────┘
+
+2. Middleware Chain (Reverse Order)
+
+   g. Endpoint
+      INPUT: Action Result
+      │  - Result Type
+      │  - Status Code
+      OUTPUT:
+      │  - Formatted Response
+      │  - Content Negotiation
+
+   f. Authorization
+      INPUT: Response
+      │  - Status Code
+      │  - Headers
+      OUTPUT:
+      │  - Security Headers
+      │  - CORS Headers
+
+   e. Authentication
+      INPUT: Response + Auth Status
+      │  - Authentication Result
+      OUTPUT:
+      │  - Auth Cookies
+      │  - Token Headers
+
+   d. Routing
+      INPUT: Response + Route Data
+      │  - URL Transformations
+      OUTPUT:
+      │  - Final URLs
+      │  - Redirect Data
+
+   c. Static Files
+      INPUT: File Response
+      │  - Content Type
+      │  - File Length
+      OUTPUT:
+      │  - Compressed Data
+      │  - Cache Headers
+
+   b. HTTPS
+      INPUT: Response Data
+      │  - Security Status
+      OUTPUT:
+      │  - HSTS Headers
+      │  - Security Policies
+
+   a. Exception Handler
+      INPUT: Response/Exception
+      │  - Error Details
+      │  - Stack Trace
+      OUTPUT:
+      │  - Error Response
+      │  - Sanitized Data
+
+3. Kestrel Response Processing
+   ┌─────────────────────┐
+   │ Response Queue     │──→ OutputBuffer
+   │ Compression        │──→ Compressed Stream
+   │ Chunking          │──→ Transfer-Encoding
+   └─────────────────────┘
+
+4. Final TCP Socket Write
+   ┌──────────────────────────────┐
+   │ HTTP/1.1 200 OK             │ ─┐
+   │ Content-Type: application/json│  │
+   │ Content-Length: 1234        │  │ Raw HTTP Response
+   │ ...                         │  │
+   │ {response body}             │ ─┘
+   └──────────────────────────────┘
+```
+
+### Low-Level Processing Details 🔧
+
+1. **Memory Management**
+   ```
+   Request Body → Pipe Reader → Memory Pool → Pipe Writer → Response Body
+   │             ┌─────────────────────┐
+   │             │ Shared Memory Pool  │
+   └─────────────► Slice Allocation   ◄────────────┘
+                 │ Buffer Management   │
+                 └─────────────────────┘
+   ```
+
+2. **Thread Handling**
+   ```
+   ┌─────────────┐     ┌──────────────┐     ┌─────────────┐
+   │ IOCP Thread │ ──► │ ThreadPool   │ ──► │ Completion  │
+   │ (Kestrel)   │     │ Work Items   │     │ Port Thread │
+   └─────────────┘     └──────────────┘     └─────────────┘
+   ```
